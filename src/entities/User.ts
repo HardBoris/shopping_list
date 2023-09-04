@@ -4,7 +4,7 @@ import { PurchaseRequest } from "./PurchaseRequest";
 @Entity("users")
 export class User {
   @PrimaryGeneratedColumn("uuid")
-  id: string;
+  id?: string;
 
   @Column()
   name: string;

@@ -5,13 +5,13 @@ import {
   PrimaryGeneratedColumn,
 } from "typeorm";
 
-@Entity("shopping")
-export class Shopping {
+@Entity("purchase_request")
+export class PurchaseRequest {
   @PrimaryGeneratedColumn()
-  shoppingId?: number;
+  prId?: number;
 
   @CreateDateColumn()
-  shoppingDate?: Date;
+  prDate?: Date;
 
   @Column()
   requestor: string;

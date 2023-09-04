@@ -1,3 +1,3 @@
-import shoppingRepository from "./Shopping.repository";
+import prRepository from "./PurchaseRequest.repository";
 
-export { shoppingRepository };
+export { prRepository };

@@ -1,3 +1,3 @@
-import { Shopping } from "./Shopping";
+import { PurchaseRequest } from "./PurchaseRequest";
 
-export { Shopping };
+export { PurchaseRequest };

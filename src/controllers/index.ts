@@ -1,2 +1,4 @@
 import prController from "./PurchaseRequest.controller";
-export { prController };
+import userController from "./User.controller";
+
+export { userController, prController };

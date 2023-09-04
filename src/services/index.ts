@@ -1,3 +1,4 @@
 import prService from "./PurchaseRequest.service";
+import userService from "./User.service";
 
-export { prService };
+export { userService, prService };

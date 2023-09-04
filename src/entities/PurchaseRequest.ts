@@ -1,11 +1,13 @@
 import {
-  Column,
   CreateDateColumn,
   Entity,
+  JoinColumn,
+  ManyToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
+import { User } from "./User";
 
-@Entity("purchase_request")
+@Entity("purchase_requests")
 export class PurchaseRequest {
   @PrimaryGeneratedColumn()
   prId?: number;
@@ -13,6 +15,7 @@ export class PurchaseRequest {
   @CreateDateColumn()
   prDate?: Date;
 
-  @Column()
-  requestor: string;
+  @ManyToOne(() => User, (user) => user.prequests)
+  @JoinColumn()
+  requestor: User;
 }

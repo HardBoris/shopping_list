@@ -1,3 +1,4 @@
+import { User } from "./User";
 import { PurchaseRequest } from "./PurchaseRequest";
 
-export { PurchaseRequest };
+export { User, PurchaseRequest };

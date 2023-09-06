@@ -34,15 +34,15 @@ export class Element {
   @OneToMany(() => Detail, (detail) => detail.element, { cascade: true })
   details: Detail[];
 
-  @OneToOne(() => Midia, (midia) => midia.element)
-  @JoinColumn()
+  @OneToOne(() => Midia, (midia) => midia.element, { cascade: true })
+  @JoinColumn({ name: "midiaProfileId" })
   midia: Midia;
 
-  @OneToOne(() => Stuff, (stuff) => stuff.element)
-  @JoinColumn()
+  @OneToOne(() => Stuff, (stuff) => stuff.element, { cascade: true })
+  @JoinColumn({ name: "stuffProfileId" })
   stuff: Stuff;
 
-  @OneToOne(() => Tool, (tool) => tool.element)
-  @JoinColumn()
+  @OneToOne(() => Tool, (tool) => tool.element, { cascade: true })
+  @JoinColumn({ name: "toolProfileId" })
   tool: Tool;
 }

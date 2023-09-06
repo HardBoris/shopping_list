@@ -17,7 +17,8 @@ class DetailRepo implements IDetailRepo {
   }
 
   save = async (detail: Partial<Detail>) => await this.ormRepo.save(detail);
-  all = async () => await this.ormRepo.find({ relations: { prequest: true } });
+  all = async () =>
+    await this.ormRepo.find({ relations: { prequest: true, element: true } });
   findOne = async (payload: object) =>
     await this.ormRepo.findOneBy({ ...payload });
   delete = async (id: string) => await this.ormRepo.delete(id);

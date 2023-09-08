@@ -3,12 +3,14 @@ import prRouter from "./PurchaseRequest.route";
 import userRouter from "./User.route";
 import detailRouter from "./Detail.route";
 import elementRouter from "./Element.route";
+import midiaRouter from "./Midia.route";
 
 const registerRouters = (app: Express): void => {
   app.use(userRouter);
   app.use(prRouter);
   app.use(detailRouter);
   app.use(elementRouter);
+  app.use(midiaRouter);
 };
 
 export default registerRouters;

@@ -4,6 +4,7 @@ import detailRepository from "./Detail.repository";
 import elementRepository from "./Element.repository";
 import midiaRepository from "./Midia.repository";
 import stuffRepository from "./Stuff.repository";
+import toolRepository from "./Tool.repository";
 
 export {
   userRepository,
@@ -12,4 +13,5 @@ export {
   elementRepository,
   midiaRepository,
   stuffRepository,
+  toolRepository,
 };

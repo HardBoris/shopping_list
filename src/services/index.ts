@@ -4,6 +4,7 @@ import detailService from "./Detail.service";
 import elementService from "./Element.service";
 import midiaService from "./Midia.service";
 import stuffService from "./Stuff.service";
+import toolService from "./Tool.service";
 
 export {
   userService,
@@ -12,4 +13,5 @@ export {
   elementService,
   midiaService,
   stuffService,
+  toolService,
 };

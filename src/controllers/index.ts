@@ -3,6 +3,7 @@ import userController from "./User.controller";
 import detailController from "./Detail.controller";
 import elementController from "./Element.controller";
 import midiaController from "./Midia.controller";
+import stuffController from "./Stuff.controller";
 
 export {
   userController,
@@ -10,4 +11,5 @@ export {
   detailController,
   elementController,
   midiaController,
+  stuffController,
 };

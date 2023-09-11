@@ -3,7 +3,7 @@ import {
   CreateDateColumn,
   Entity,
   JoinColumn,
-  ManyToOne,
+  OneToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
 import { PurchaseRequest } from "./PurchaseRequest";
@@ -55,7 +55,7 @@ export class Purchase {
   })
   purchaseStatus: PurchaseStatus;
 
-  @ManyToOne(() => PurchaseRequest)
+  @OneToOne(() => PurchaseRequest)
   @JoinColumn({ name: "prequest" })
   prequest: PurchaseRequest;
 

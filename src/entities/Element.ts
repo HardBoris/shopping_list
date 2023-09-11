@@ -2,6 +2,7 @@ import {
   Column,
   Entity,
   JoinColumn,
+  ManyToMany,
   OneToMany,
   OneToOne,
   PrimaryGeneratedColumn,
@@ -10,6 +11,7 @@ import { Detail } from "./Detail";
 import { Midia } from "./Midia";
 import { Stuff } from "./Stuff";
 import { Tool } from "./Tool";
+import { Partner } from "./Partner";
 
 @Entity("elements")
 export class Element {
@@ -30,6 +32,9 @@ export class Element {
 
   @Column({ default: true })
   active: boolean;
+
+  @ManyToMany(() => Partner)
+  partners: Partner[];
 
   @OneToMany(() => Detail, (detail) => detail.element, { cascade: true })
   details: Detail[];

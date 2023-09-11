@@ -6,5 +6,16 @@ import { Midia } from "./Midia";
 import { Stuff } from "./Stuff";
 import { Tool } from "./Tool";
 import { Purchase } from "./Purchase";
+import { Partner } from "./Partner";
 
-export { User, PurchaseRequest, Detail, Element, Midia, Stuff, Tool, Purchase };
+export {
+  User,
+  PurchaseRequest,
+  Detail,
+  Element,
+  Midia,
+  Stuff,
+  Tool,
+  Purchase,
+  Partner,
+};

@@ -3,10 +3,12 @@ import {
   CreateDateColumn,
   Entity,
   JoinColumn,
+  ManyToOne,
   OneToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
 import { PurchaseRequest } from "./PurchaseRequest";
+import { Partner } from "./Partner";
 
 export enum PaymentForm {
   BILLED = "Faturado",
@@ -59,9 +61,9 @@ export class Purchase {
   @JoinColumn({ name: "prequest" })
   prequest: PurchaseRequest;
 
-  /* @ManyToOne(() => Partner)
-  @JoinColumn({ name: "partnerId" })
-  partner: Partner; */
+  @ManyToOne(() => Partner)
+  @JoinColumn({ name: "partner" })
+  partner: Partner;
 
   /* @ManyToOne(() => Company)
   @JoinColumn({ referencedColumnName: "code" })

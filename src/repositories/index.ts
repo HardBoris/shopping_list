@@ -6,6 +6,7 @@ import midiaRepository from "./Midia.repository";
 import stuffRepository from "./Stuff.repository";
 import toolRepository from "./Tool.repository";
 import purchaseRepository from "./Purchase.repository";
+import partnerRepository from "./Partner.repository";
 
 export {
   userRepository,
@@ -16,4 +17,5 @@ export {
   stuffRepository,
   toolRepository,
   purchaseRepository,
+  partnerRepository,
 };

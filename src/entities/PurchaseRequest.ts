@@ -21,6 +21,9 @@ export class PurchaseRequest {
   @JoinColumn()
   requestor: User;
 
-  @OneToMany(() => Detail, (detail) => detail.prequest, { cascade: true })
+  @OneToMany(() => Detail, (detail) => detail.prequest, {
+    cascade: true,
+    eager: true,
+  })
   details: Detail[];
 }

@@ -6,6 +6,7 @@ import midiaService from "./Midia.service";
 import stuffService from "./Stuff.service";
 import toolService from "./Tool.service";
 import purchaseService from "./Purchase.service";
+import partnerService from "./Partner.service";
 
 export {
   userService,
@@ -16,4 +17,5 @@ export {
   stuffService,
   toolService,
   purchaseService,
+  partnerService,
 };
